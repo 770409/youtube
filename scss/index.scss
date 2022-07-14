@@ -122,11 +122,14 @@ p {
       height: 40px;
     }
 
+    .rBlock {
+      width: 198px !important;
+    }
+
     .totalLike {
       color: rgb(255, 0, 0);
       font-size: 18px;
       transition: .3s;
-      display: inline;
 
       &:hover {
         font-size: 20px;
@@ -228,7 +231,7 @@ main {
     width: calc(100% - 240px);
     height: 100%;
     display: none !important;
-    
+
 
     .card1 {
       height: calc(100%/ 3);
@@ -352,9 +355,10 @@ main {
       background-color: #F1F1F1;
 
       .card2 {
-        &:hover{
+        &:hover {
           background-color: #E5E5E5;
         }
+
         .num {
           width: 36px;
           line-height: 101px;
@@ -372,12 +376,14 @@ main {
         .font12 {
           color: #606060;
         }
-        .font30{
+
+        .font30 {
           color: rgba(158, 158, 158, 0.671);
-          
+
           top: 24px;
           right: 20px;
-          &:hover{
+
+          &:hover {
             color: rgb(255, 255, 255);
             background-color: #d6d6d6;
             box-shadow: 1px 1px 5px 1px rgba(49, 49, 49, 0.253);
@@ -388,7 +394,7 @@ main {
     }
   }
 
-  .BD{
+  .BD {
     display: flex !important;
   }
 
@@ -402,7 +408,7 @@ main {
   #navUp {
     .navUp {
       .searchLR {
-        width: calc(100% - 369px);
+        width: calc(100% - 29px);
 
         .searchL {
           width: calc(100% - 48px);
@@ -461,12 +467,12 @@ main {
 
     }
 
-    #video {
+    .video {
       width: calc(100% - 72px);
     }
 
     // ===========
-    #favoriteVideos {
+    .favoriteVideos {
       width: calc(100% - 72px);
     }
   }
@@ -520,7 +526,7 @@ main {
       display: none !important;
     }
 
-    #video {
+    .video {
       width: 100%;
       padding: 0 48px !important;
 
@@ -528,6 +534,28 @@ main {
         padding: 0 8px !important;
       }
 
+    }
+
+    .favoriteVideos {
+      width: 100%;
+      flex-wrap: wrap !important;
+
+      .videoPlayArea {
+        width: 100%;
+        margin: 0 auto;
+
+        .rowUp {
+          .playP {
+            width: 100%;
+          }
+        }
+
+      }
+
+      .allFavoriteVideos {
+        margin: 0 auto;
+        width: 90%;
+      }
     }
   }
 }
@@ -567,7 +595,7 @@ main {
   }
 
   main {
-    #video {
+    .video {
       .card1 {
         padding: 0 8px !important;
       }
