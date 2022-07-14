@@ -109,12 +109,15 @@ p {
   height: 40px;
 }
 
+#navUp .navUp .rBlock {
+  width: 198px !important;
+}
+
 #navUp .navUp .totalLike {
   color: red;
   font-size: 18px;
   -webkit-transition: .3s;
   transition: .3s;
-  display: inline;
 }
 
 #navUp .navUp .totalLike:hover {
@@ -362,7 +365,7 @@ main .BD {
 
 @media (max-width: 1199px) {
   #navUp .navUp .searchLR {
-    width: calc(100% - 369px);
+    width: calc(100% - 29px);
   }
   #navUp .navUp .searchLR .searchL {
     width: calc(100% - 48px);
@@ -402,10 +405,10 @@ main .BD {
   main #navLeft div {
     display: none !important;
   }
-  main #video {
+  main .video {
     width: calc(100% - 72px);
   }
-  main #favoriteVideos {
+  main .favoriteVideos {
     width: calc(100% - 72px);
   }
 }
@@ -443,12 +446,28 @@ main .BD {
   main #navLeft {
     display: none !important;
   }
-  main #video {
+  main .video {
     width: 100%;
     padding: 0 48px !important;
   }
-  main #video .card1 {
+  main .video .card1 {
     padding: 0 8px !important;
+  }
+  main .favoriteVideos {
+    width: 100%;
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+  }
+  main .favoriteVideos .videoPlayArea {
+    width: 100%;
+    margin: 0 auto;
+  }
+  main .favoriteVideos .videoPlayArea .rowUp .playP {
+    width: 100%;
+  }
+  main .favoriteVideos .allFavoriteVideos {
+    margin: 0 auto;
+    width: 90%;
   }
 }
 
@@ -475,7 +494,7 @@ main .BD {
     border: none;
     padding: 0px;
   }
-  main #video .card1 {
+  main .video .card1 {
     padding: 0 8px !important;
   }
 }
