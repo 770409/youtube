@@ -1,0 +1,482 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+.letter2 {
+  letter-spacing: 2px;
+}
+
+.colorli {
+  color: white;
+}
+
+.container {
+  width: 100%;
+}
+
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul li {
+  display: inline-block;
+}
+
+p {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.pp {
+  cursor: pointer;
+}
+
+.font12 {
+  font-size: 12px;
+}
+
+.font13 {
+  font-size: 13px;
+}
+
+.font14 {
+  font-size: 14px;
+}
+
+.font16 {
+  font-size: 16px;
+}
+
+.font18 {
+  font-size: 18px;
+}
+
+.font20 {
+  font-size: 20px;
+}
+
+.font24 {
+  font-size: 24px;
+}
+
+.font30 {
+  font-size: 30px;
+}
+
+#navUp .navUp {
+  height: 56px;
+}
+
+#navUp .navUp .logoTW {
+  margin-top: -25px;
+  margin-left: 2px;
+  color: #606060;
+}
+
+#navUp .navUp .searchBox {
+  width: 538px;
+  height: 40px;
+  border: 1px solid #c5c5c5;
+  border-right: none;
+  margin-left: 40px;
+}
+
+#navUp .navUp .searchBox input {
+  border: none;
+  padding: 5px;
+}
+
+#navUp .navUp button {
+  background: #F8F8F8;
+  border: 1px solid #c5c5c5;
+  height: 40px;
+}
+
+#navUp .navUp .totalLike {
+  color: red;
+  font-size: 18px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  display: inline;
+}
+
+#navUp .navUp .totalLike:hover {
+  font-size: 20px;
+  -webkit-transform: translate(2px, -2px);
+          transform: translate(2px, -2px);
+  color: #f54a4a;
+}
+
+#navUp .navUp .totalLike:active {
+  color: #d82525;
+}
+
+#navUp .navDL {
+  width: 240px;
+  background-color: rgba(175, 67, 67, 0);
+}
+
+#navUp .navDR #keywords {
+  height: 56px;
+}
+
+#navUp .navDR #keywords .keys {
+  padding: 15px 0;
+}
+
+#navUp .navDR #keywords .keys span {
+  margin: 12px 12px 12px 0;
+  padding: 3px 12px;
+  background-color: #F2F2F2;
+  border: 1px solid #E5E5E5;
+  border-radius: 30px;
+}
+
+#navUp .navDR #keywords .keys span:first-child {
+  color: #FFF;
+}
+
+#navUp .navDR #keywords .keys img {
+  display: none;
+}
+
+main {
+  margin-top: 56px;
+}
+
+main #navLeft {
+  width: 240px;
+  padding-right: 16px;
+}
+
+main #navLeft ul p {
+  color: #606060;
+}
+
+main #navLeft ul li {
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+}
+
+main #navLeft ul li .ball {
+  width: 5px;
+  height: 5px;
+  border-radius: 50px;
+  background-color: #065FD4;
+}
+
+main #navLeft ul li:hover {
+  background-color: #F2F2F2;
+}
+
+main #navLeft ul .cc {
+  background-color: #D9D9D9;
+}
+
+main #navLeft div span {
+  cursor: pointer;
+  margin-right: 8px;
+  height: 18px;
+  color: #606060;
+}
+
+main .video {
+  margin-top: 100px;
+  width: calc(100% - 240px);
+  height: 100%;
+  display: none !important;
+}
+
+main .video .card1 {
+  height: calc(100%/ 3);
+  padding: 0 16px 0 0;
+  margin-bottom: 24px;
+}
+
+main .video .card1 .titleImg {
+  width: 100%;
+}
+
+main .video .card1 .row {
+  height: 53px;
+}
+
+main .video .card1 .row img {
+  width: 36px;
+  height: 36px;
+  margin: 12px 12px 0 0;
+}
+
+main .video .card1 .row span {
+  margin: 9px 12px 0 0;
+}
+
+main .video .card1 .row .fa-heart {
+  margin-top: 21px;
+  margin-right: 5px;
+  color: #dadada;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+}
+
+main .video .card1 .row .fa-heart:hover {
+  font-size: 18px;
+  -webkit-transform: translate(2px, -2px);
+          transform: translate(2px, -2px);
+  color: rgba(216, 37, 37, 0.342);
+}
+
+main .video .card1 .row .fa-heart:active {
+  color: #d82525;
+}
+
+main .video .card1 .row .heartFocus {
+  font-size: 18px;
+  -webkit-transform: translate(2px, -2px);
+          transform: translate(2px, -2px);
+  color: red !important;
+}
+
+main .video .card1 .row .heartFocus:hover {
+  color: red;
+}
+
+main .video .card1 .word {
+  padding: 0 0 0 48px;
+  margin-top: 12px;
+}
+
+main .video .card1 .word p {
+  color: #606060;
+  height: 21px;
+}
+
+main .favoriteVideos {
+  margin-top: 100px;
+  width: calc(100% - 240px);
+  height: 100%;
+  display: none !important;
+}
+
+main .favoriteVideos .videoPlayArea {
+  width: 360px;
+}
+
+main .favoriteVideos .videoPlayArea .rowUp .playP {
+  width: 312px;
+  height: 175px;
+}
+
+main .favoriteVideos .videoPlayArea .rowUp .text-center {
+  width: 312px;
+  height: 40px;
+  margin-top: -40px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.61);
+}
+
+main .favoriteVideos .videoPlayArea .rowUp .font12 {
+  width: 52px;
+  background-color: #ECECEC;
+}
+
+main .favoriteVideos .videoPlayArea .rowUp .font12 img {
+  width: 16px;
+  height: 16px;
+}
+
+main .favoriteVideos .videoPlayArea .rowUp .font12 span {
+  margin-left: 3px;
+}
+
+main .favoriteVideos .videoPlayArea .font14 img {
+  width: 48px;
+  height: 48px;
+  margin-right: 5px;
+}
+
+main .favoriteVideos .allFavoriteVideos {
+  width: calc(100% - 360px);
+  background-color: #F1F1F1;
+}
+
+main .favoriteVideos .allFavoriteVideos .card2:hover {
+  background-color: #E5E5E5;
+}
+
+main .favoriteVideos .allFavoriteVideos .card2 .num {
+  width: 36px;
+  line-height: 101px;
+}
+
+main .favoriteVideos .allFavoriteVideos .card2 .border-bottom {
+  width: calc(100% - 36px);
+}
+
+main .favoriteVideos .allFavoriteVideos .card2 img {
+  width: 120px;
+  height: 68px;
+}
+
+main .favoriteVideos .allFavoriteVideos .card2 .font12 {
+  color: #606060;
+}
+
+main .favoriteVideos .allFavoriteVideos .card2 .font30 {
+  color: rgba(158, 158, 158, 0.671);
+  top: 24px;
+  right: 20px;
+}
+
+main .favoriteVideos .allFavoriteVideos .card2 .font30:hover {
+  color: white;
+  background-color: #d6d6d6;
+  -webkit-box-shadow: 1px 1px 5px 1px rgba(49, 49, 49, 0.253);
+          box-shadow: 1px 1px 5px 1px rgba(49, 49, 49, 0.253);
+}
+
+main .BD {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+@media (max-width: 1199px) {
+  #navUp .navUp .searchLR {
+    width: calc(100% - 369px);
+  }
+  #navUp .navUp .searchLR .searchL {
+    width: calc(100% - 48px);
+  }
+  #navUp .navUp .searchLR .searchL .searchBox {
+    width: calc(100% - 101px);
+  }
+  #navUp .navDL {
+    width: 72px;
+  }
+  main #navLeft {
+    width: 72px;
+    padding: 0px;
+  }
+  main #navLeft ul {
+    border: none !important;
+  }
+  main #navLeft ul p {
+    display: none;
+  }
+  main #navLeft ul:not(:first-child) {
+    display: none !important;
+  }
+  main #navLeft ul li {
+    padding: 16px 0px 14px !important;
+    height: 74px;
+  }
+  main #navLeft ul li:nth-child(5) {
+    border: none !important;
+  }
+  main #navLeft ul .bye {
+    display: none !important;
+  }
+  main #navLeft ul .cc {
+    background-color: #d9d9d900;
+  }
+  main #navLeft div {
+    display: none !important;
+  }
+  main #video {
+    width: calc(100% - 72px);
+  }
+  main #favoriteVideos {
+    width: calc(100% - 72px);
+  }
+}
+
+@media (max-width: 991px) {
+  #navUp .navDR {
+    overflow: hidden;
+  }
+  #navUp .navDR #keywords .keys {
+    padding: 0 0;
+    position: relative;
+    overflow: hidden;
+  }
+  #navUp .navDR #keywords .keys span {
+    margin: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  #navUp .navDR #keywords .keys img {
+    display: block;
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    padding: 16px;
+    border-radius: 50px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 0px 15px 13px white;
+            box-shadow: 0px 0px 15px 13px white;
+  }
+}
+
+@media (max-width: 767px) {
+  #navUp .navDL {
+    width: 0px;
+  }
+  main #navLeft {
+    display: none !important;
+  }
+  main #video {
+    width: 100%;
+    padding: 0 48px !important;
+  }
+  main #video .card1 {
+    padding: 0 8px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  #navUp .navUp .searchLR .searchL {
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: end !important;
+  }
+  #navUp .navUp .searchLR .searchL .searchBox {
+    width: 0%;
+    height: 0px;
+    border: none;
+    margin: 0px;
+  }
+  #navUp .navUp .searchLR .searchL .searchBox input {
+    display: none;
+  }
+  #navUp .navUp .searchLR img {
+    padding: 8px !important;
+  }
+  #navUp .navUp button {
+    background: #f8f8f800;
+    border: none;
+    padding: 0px;
+  }
+  main #video .card1 {
+    padding: 0 8px !important;
+  }
+}
+/*# sourceMappingURL=index.css.map */

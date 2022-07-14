@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./svg/miLogo.svg">
+    <title>77-youtube</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- navUP -->
+        <nav id="navUp" class="fixed-top ">
+            <div class="navUp row justify-content-between flex-nowrap px-2 px-sm-3 bg-light">
+                <div class="d-flex align-items-center">
+                    <img class="pp p-2" src="./svg/navUp/hamburger.svg" alt="">
+                    <img class="pp pl-3 " src="./svg/navUp/logo.svg" alt="">
+                    <span class="font12 logoTW">TW</span>
+                </div>
+                <div class="row align-items-center searchLR">
+                    <div class="row searchL">
+                        <div class="searchBox d-flex align-items-center">
+                            <input type="text" placeholder="搜尋">
+                        </div>
+                        <button><img class="pp mx-auto p-2" src="./svg/navUp/search.svg" alt=""></button>
+
+                    </div>
+                    <img class="pp p-2 pl-3" src="./svg/navUp/voice.svg" alt="">
+                </div>
+                <div class=" d-flex align-items-center">
+                    <ul>
+
+                        <li>
+                            <i @click="YY()"  class="pp fa-solid fa-heart totalLike p-2" title="喜歡的影片" ></i>
+                        </li>
+                        <li><img class="pp  p-2" src="./svg/navUp/create.svg" alt=""></li>
+                        <li><img class="pp  p-2" src="./svg/navUp/application.svg" alt=""></li>
+                        <li><img class="pp p-2" src="./svg/navUp/notice.svg" alt=""></li>
+                        <li><img class="pp px-2" src="./svg/navUp/name.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="navDL"></div>
+                <div class="navDR col p-0">
+                    <!-- keywords(右上) -->
+                    <section id="keywords"
+                        class="row flex-nowrap border-bottom border-top justify-content-center bg-light">
+                        <div class="keys">
+                            <span class="pp ml-4 bg-dark font14">全部</span>
+                            <span class="pp font14">音樂</span>
+                            <span class="pp font14">合輯</span>
+                            <span class="pp font14">直播中</span>
+                            <span class="pp font14">遊戲</span>
+                            <span class="pp font14">烹飪</span>
+                            <span class="pp font14">自然</span>
+                            <span class="pp font14">最新上傳</span>
+                            <span class="pp font14">已觀看</span>
+                            <span class="pp font14">已觀看讓你耳目一新的影片</span>
+                            <img class="pp" src="./svg/navUp/right.svg" alt="">
+                        </div>
+
+
+
+                    </section>
+                </div>
+            </div>
+
+
+        </nav>
+
+        <main>
+            <div class="row">
+                <!-- navLeft(左) -->
+                <div id="navLeft">
+                    <ul class="py-2 border-bottom">
+                        <li class="cc px-4 w-100 d-flex flex-column align-items-center flex-xl-row ">
+                            <img class="mr-xl-4" src="./svg/navLeft/1.svg" alt="">
+                            <span class="font14">首頁</span>
+                        </li>
+                        <li class="px-4 w-100 d-flex flex-column align-items-center flex-xl-row">
+                            <img class="mr-xl-4" src="./svg/navLeft/2.svg" alt="">
+                            <span class="font14">探索</span>
+                        </li>
+                        <li class="px-4 w-100 d-flex flex-column align-items-center flex-xl-row">
+                            <img class="mr-xl-4" src="./svg/navLeft/3.svg" alt="">
+                            <span class="font14">Shorts</span>
+                        </li>
+                        <li class="px-4 w-100 d-flex flex-column align-items-center flex-xl-row">
+                            <img class="mr-xl-4" src="./svg/navLeft/4.svg" alt="">
+                            <span class="font14">訂閱內容</span>
+                        </li>
+                        <li class="px-4 w-100 d-flex flex-column align-items-center flex-xl-row pt-2 border-top mt-2">
+                            <img class="mr-xl-4" src="./svg/navLeft/5.svg" alt="">
+                            <span class="font14">媒體庫</span>
+                        </li>
+                        <!--  -->
+                        <li class="bye px-4 w-100 d-flex align-items-center">
+                            <img class="mr-xl-4" src="./svg/navLeft/6.svg" alt="">
+                            <span class="font14">觀看紀錄</span>
+                        </li>
+                        <li class="bye px-4 w-100 d-flex align-items-center">
+                            <img class="mr-xl-4" src="./svg/navLeft/7.svg" alt="">
+                            <span class="font14">你的影片</span>
+                        </li>
+                        <li class="bye px-4 w-100 d-flex align-items-center">
+                            <img class="mr-xl-4" src="./svg/navLeft/8.svg" alt="">
+                            <span class="font14">稍後觀看</span>
+                        </li>
+                        <li @click="YY()" class="bye px-4 w-100 d-flex align-items-center">
+                            <img class="mr-xl-4" src="./svg/navLeft/9.svg" alt="">
+                            <span class="font14">喜歡的影片</span>
+                        </li>
+                    </ul>
+                    <!--  -->
+                    <ul class="py-2 border-bottom">
+                        <p class="py-2 px-4 font14">訂閱內容</p>
+                        <li class="px-4 w-100 d-flex align-items-center">
+                            <img class="mr-xl-4" src="./svg/navLeft/1.png" alt="">
+                            <span class="font14">STR Network</span>
+                        </li>
+                        <li class="px-4 w-100 d-flex align-items-center">
+                            <img class="mr-xl-4" src="./svg/navLeft/2.png" alt="">
+                            <span class="font14">千千進食中</span>
+                            <div class="ball ml-auto"></div>
+                        </li>
+                        <li class="px-4 w-100 d-flex align-items-center">
+                            <img class="mr-xl-4" src="./svg/navLeft/3.png" alt="">
+                            <span class="font14">木曜4超玩</span>
+                            <div class="ball ml-auto"></div>
+                        </li>
+                        <li class="px-4 w-100 d-flex align-items-center">
+                            <img class="mr-xl-4" src="./svg/navLeft/4.png" alt="">
+                            <span class="font14">理科太太</span>
+                            <div class="ball ml-auto"></div>
+                        </li>
+                        <li class="px-4 w-100 d-flex align-items-center">
+                            <img class="mr-xl-4" src="./svg/navLeft/5.png" alt="">
+                            <span class="font14">劉芒</span>
+                        </li>
+                        <li class="px-4 w-100 d-flex align-items-center">
+                            <img class="mr-xl-4" src="./svg/navLeft/10.svg" alt="">
+                            <span class="font14">顯示另外81個項目</span>
+                        </li>
+                    </ul>
+                    <ul class="py-2 border-bottom">
+                        <p class="py-2 px-4 font14">更多YOUTUBE功能</p>
+                        <li class="px-4 w-100 d-flex align-items-center">
+                            <img class="mr-xl-4" src="./svg/navLeft/11.svg" alt="">
+                            <span class="font14">YouTube Premium</span>
+                        </li>
+                        <li class="px-4 w-100 d-flex align-items-center">
+                            <img class="mr-xl-4" src="./svg/navLeft/12.svg" alt="">
+                            <span class="font14">電影</span>
+                        </li>
+                        <li class="px-4 w-100 d-flex align-items-center">
+                            <img class="mr-xl-4" src="./svg/navLeft/13.svg" alt="">
+                            <span class="font14">遊戲</span>
+                        </li>
+                        <li class="px-4 w-100 d-flex align-items-center">
+                            <img class="mr-xl-4" src="./svg/navLeft/14.svg" alt="">
+                            <span class="font14">直播</span>
+                        </li>
+                        <li class="px-4 w-100 d-flex align-items-center">
+                            <img class="mr-xl-4" src="./svg/navLeft/15.svg" alt="">
+                            <span class="font14">體育</span>
+                        </li>
+                    </ul>
+                    <ul class="py-2 border-bottom">
+                        <li class="px-4 w-100 d-flex align-items-center">
+                            <img class="mr-xl-4" src="./svg/navLeft/16.svg" alt="">
+                            <span class="font14">設定</span>
+                        </li>
+                        <li class="px-4 w-100 d-flex align-items-center">
+                            <img class="mr-xl-4" src="./svg/navLeft/17.svg" alt="">
+                            <span class="font14">檢舉紀錄</span>
+                        </li>
+                        <li class="px-4 w-100 d-flex align-items-center">
+                            <img class="mr-xl-4" src="./svg/navLeft/18.svg" alt="">
+                            <span class="font14">說明</span>
+                        </li>
+                        <li class="px-4 w-100 d-flex align-items-center">
+                            <img class="mr-xl-4" src="./svg/navLeft/19.svg" alt="">
+                            <span class="font14">提供意見</span>
+                        </li>
+                    </ul>
+                    <div class="pt-3 px-4 d-flex flex-wrap font13">
+                        <span>簡介</span>
+                        <span>媒體</span>
+                        <span>版權</span>
+                        <span>與我們聯絡</span>
+                        <span>創作者</span>
+                        <span>廣告</span>
+                        <span>開發人員</span>
+                    </div>
+                    <div class="pt-3 px-4 d-flex flex-wrap font13">
+                        <span>條款</span>
+                        <span>隱私權</span>
+                        <span>政策與安全性</span>
+                        <span>YouTube 運作方式</span>
+                        <span>測試新功能</span>
+                    </div>
+                    <div class="py-3 px-4 d-flex font13">© 2022 Google LLC</div>
+
+                </div>
+
+                <!-- videos(右下) -->
+                
+                <div :class="{ BD:fa === 'Y'}" class="video d-flex flex-wrap px-3" >
+                    <div v-for="(item,index) in card1"
+                        class="pp card1 col-12 col-sm-6 col-lg-4 col-xl-3 overflow-hidden">
+                        <img class="titleImg" :src="item.bigImg" alt="">
+                        <div class="row flex-nowrap overflow-hidden">
+                            <img class="rounded-circle" :src="item.headImg" alt="">
+                            <span class="font16">{{item.titel}}</span>
+                            <i class="fa-solid fa-heart" :class="{ heartFocus:item.addLike === 'Y'}"
+                                @click="addLikeVideo(index)"></i>
+
+                        </div>
+                        <div class="word">
+                            <p class="font14">{{item.name}}<i v-if="item.checkMe === 'Y'"
+                                    class="fa-solid fa-circle-check pl-1 font12"></i></p>
+                            <p class="font14 overflow-hidden">{{item.seeData}}</p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <!-- favoriteVideos (右下2) -->
+                <div :class="{ BD:fa === 'F'}" class="favoriteVideos d-flex flex-nowrap">
+                    <!-- 左 -->
+                    <div class="videoPlayArea p-4">
+
+
+                        <div class="rowUp border-bottom">
+                            <img class="playP" :src="card1[0].bigImg" alt="">
+                            <div class="bg"></div>
+                            <div class="w-100 text-center py-2">全部播放</div>
+                            <p class="font24 mt-2">喜歡的影片</p>
+                            <p class="mb-1 font14">{{likeList.length}}部影片</p>
+                            <div class="mb-1 font12 p-1">
+                                <img src="./svg/favoriteVideos/lock.svg" alt="">
+                                <span>私人</span>
+                            </div>
+                            <img class="p-2 mb-2" src="./svg/favoriteVideos/012.svg" alt="">
+                        </div>
+                        <div class="font14 py-3">
+                            <img class="mr-3" src="./svg/navUp/name.png" alt="">
+                            <span>莊雅淇77</span>
+                        </div>
+                        <div @click="YY()" class="backk pp w-50 text-center font16 rounded-lg py-2 mx-auto bg-warning">返回首頁<i class="fa-solid fa-arrow-left-long"></i>
+                        </div>
+                    </div>
+                    <!-- 右 -->
+                    <div class="allFavoriteVideos">
+                        
+                        <p v-if="likeList.length == 0" class="text-center mt-3">尚未加入影片</p v-if="">
+                        <div v-for="(item,index) in likeList" class="card2 row position-relative">
+                            <div class="num text-center">{{index + 1}}</div>
+                            <div class="row border-bottom py-3">
+                                <img class="mr-2" :src="item.bigImg" alt="">
+                                <div>
+                                    <p class="font16 mb-2">{{item.titel}}</p>
+                                    <p class="font12">{{item.name}}</p>
+                                </div>
+                            </div>
+                            <div class="pp position-absolute font30 px-3 rounded-circle" @click="deleteLikeVideo(index)">-</div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script>
+        Vue.createApp({
+            data() {
+                return {
+                    numm:0,
+                    fa:'Y',
+                    likeList: [],
+                    card1: [
+                        {
+                            bigImg: './picture/1.webp',
+                            headImg: './picture/11.jpg',
+                            titel: '「無廣告版」森林系音樂☕在大自然中放鬆讀書＆工作音樂...',
+                            touchNum: 0,
+                            addLike: 'F',
+                            name: 'Music For Studying',
+                            checkMe: 'N',
+                            seeData: '觀看次數：25萬次．7個月前'
+                        },
+                        {
+                            bigImg: './picture/2.jpg',
+                            headImg: './picture/01.png',
+                            titel: '合輯-LOVE IS GONE by Slander 文慧如 中文',
+                            addLike: 'N',
+                            touchNum: 0,
+                            addLike: 'F',
+                            name: 'Remix',
+                            checkMe: 'N',
+                            seeData: '文慧如Ink．王忻辰和其他藝人'
+                        },
+                        {
+                            bigImg: './picture/3.jpg',
+                            headImg: './picture/01.png',
+                            titel: '合輯-【台灣20年偶像劇金曲里燒2.0每一首都陷入青春追劇回憶！】1@倆人',
+                            touchNum: 0,
+                            addLike: 'F',
+                            name: 'Acoustic Too',
+                            checkMe: 'N',
+                            seeData: '瑀禾、周杰倫、李芷婷和其他藝人'
+                        },
+                        {
+                            bigImg: './picture/4.webp',
+                            headImg: './picture/41.jpg',
+                            titel: '你曾被一句話刺傷嗎？覺察這件事，讓你遠離言語暴力一《你說的是愛還是傷害…',
+                            touchNum: 0,
+                            addLike: 'F',
+                            name: '啟點文化',
+                            checkMe: 'Y',
+                            seeData: '觀看次數：6721．22 小時前'
+                        },
+                        {
+                            bigImg: './picture/5.webp',
+                            headImg: './picture/51.jpg',
+                            titel: '「無廣告版」森林系音樂☕在大自然中放鬆讀書＆工作音樂...',
+                            touchNum: 0,
+                            addLike: 'F',
+                            name: 'Music For Studying',
+                            checkMe: 'N',
+                            seeData: '觀看次數：25萬次．7個月前'
+                        },
+                        {
+                            bigImg: './picture/6.webp',
+                            headImg: './picture/61.jpg',
+                            titel: '阿宅立刻變帥哥！必學5套型男穿搭，Zara、uniqlo一萬...',
+                            touchNum: 0,
+                            addLike: 'F',
+                            name: '77老大',
+                            checkMe: 'Y',
+                            seeData: '觀看次數3.7萬次．3天前'
+                        },
+                        {
+                            bigImg: './picture/7.webp',
+                            headImg: './picture/41.jpg',
+                            titel: '「無廣告版」森林系音樂☕在大自然中放鬆讀書＆工作音樂...',
+                            touchNum: 0,
+                            addLike: 'F',
+                            name: '啟點文化',
+                            checkMe: 'Y',
+                            seeData: '觀看次數：25萬次．7個月前'
+                        },
+                        {
+                            bigImg: './picture/8.webp',
+                            headImg: './picture/81.jpg',
+                            titel: '【千千進食中】好想出國！航空公司員工餐開箱，飛機餐…',
+                            touchNum: 0,
+                            addLike: 'F',
+                            name: '千千進食中',
+                            checkMe: 'Y',
+                            seeData: '觀看次數：50萬次．2天前'
+                        },
+                    ],
+                }
+            },
+            methods: {
+                // 加入最愛
+                addLikeVideo(index) {
+                    // 加紅色愛心
+                    this.card1[index].addLike = this.card1[index].addLike == 'Y' ? 'N' : 'Y';
+                    if (this.card1[index].addLike == 'Y') {
+                        // 加入陣列
+                        this.likeList.push(this.card1[index]);
+                    } else {
+                        let loc = this.likeList.findIndex(data => data.name === this.card1[index].name);
+                        this.likeList.splice(loc, 1);
+                    }
+
+                    console.log(this.likeList);
+                    console.log(this.card1[index].addLike);
+                },
+                deleteLikeVideo(index){
+                    let loc1 = this.card1.findIndex(data => data.name === this.likeList[index].name);
+                    this.card1[loc1].addLike = 'N';
+
+
+                        this.likeList.splice(index, 1);
+
+                },
+                YY(){
+                    this.numm++;
+                    if(this.numm%2 == 0)
+                    {
+                        this.fa ='Y';
+                    }else{
+                        this.fa ='F';
+                    }
+                },
+
+            },
+            mounted() {
+            },
+        }).mount('#app');
+    </script>
+    
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+        crossorigin="anonymous"></script>
+
+
+
+
+</body>
+
+</html>

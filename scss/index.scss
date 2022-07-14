@@ -1,0 +1,576 @@
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+
+a {
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+.letter2 {
+  letter-spacing: 2px;
+}
+
+.colorli {
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  width: 100%;
+}
+
+.row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+
+  li {
+    display: inline-block;
+  }
+}
+
+p {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.pp {
+  cursor: pointer;
+}
+
+.font12 {
+  font-size: 12px;
+}
+
+.font13 {
+  font-size: 13px;
+}
+
+.font14 {
+  font-size: 14px;
+}
+
+.font16 {
+  font-size: 16px;
+}
+
+.font18 {
+  font-size: 18px;
+}
+
+.font20 {
+  font-size: 20px;
+}
+
+.font24 {
+  font-size: 24px;
+}
+
+.font30 {
+  font-size: 30px;
+}
+
+//   .crp {
+//     &:hover {
+//       color: rgb(185, 185, 185);
+
+//     }
+//   }
+
+// navUp
+
+#navUp {
+  .navUp {
+    height: 56px;
+
+    .logoTW {
+      margin-top: -25px;
+      margin-left: 2px;
+      color: #606060;
+    }
+
+    .searchBox {
+      width: 538px;
+      height: 40px;
+      border: 1px solid rgb(197, 197, 197);
+      border-right: none;
+      margin-left: 40px;
+
+      input {
+        border: none;
+        padding: 5px;
+      }
+    }
+
+    button {
+      background: #F8F8F8;
+      border: 1px solid rgb(197, 197, 197);
+
+      height: 40px;
+    }
+
+    .totalLike {
+      color: rgb(255, 0, 0);
+      font-size: 18px;
+      transition: .3s;
+      display: inline;
+
+      &:hover {
+        font-size: 20px;
+        transform: translate(2px, -2px);
+        color: rgb(245, 74, 74);
+      }
+
+      &:active {
+        color: rgb(216, 37, 37);
+      }
+    }
+  }
+
+  .navDL {
+    width: 240px;
+    background-color: rgba(175, 67, 67, 0);
+  }
+
+  .navDR {
+
+    #keywords {
+      height: 56px;
+
+      .keys {
+        padding: 15px 0;
+
+        span {
+          margin: 12px 12px 12px 0;
+          padding: 3px 12px;
+          background-color: #F2F2F2;
+          border: 1px solid #E5E5E5;
+          border-radius: 30px;
+
+          &:first-child {
+            color: #FFF;
+          }
+        }
+
+        img {
+          display: none;
+        }
+      }
+
+    }
+  }
+
+}
+
+main {
+  margin-top: 56px;
+
+  #navLeft {
+    width: 240px;
+    padding-right: 16px;
+
+    ul {
+      p {
+        color: #606060;
+      }
+
+      li {
+        width: 100%;
+        height: 40px;
+        cursor: pointer;
+
+        .ball {
+
+          width: 5px;
+          height: 5px;
+          border-radius: 50px;
+          background-color: #065FD4;
+        }
+
+        &:hover {
+          background-color: #F2F2F2;
+        }
+
+
+      }
+
+      .cc {
+        background-color: #D9D9D9;
+      }
+    }
+
+    div {
+      span {
+        cursor: pointer;
+        margin-right: 8px;
+        height: 18px;
+        color: #606060;
+      }
+    }
+
+  }
+
+  .video {
+    margin-top: 100px;
+    width: calc(100% - 240px);
+    height: 100%;
+    display: none !important;
+    
+
+    .card1 {
+      height: calc(100%/ 3);
+      padding: 0 16px 0 0;
+      margin-bottom: 24px;
+
+      .titleImg {
+        width: 100%;
+
+      }
+
+      .row {
+        height: 53px;
+
+        img {
+          width: 36px;
+          height: 36px;
+          margin: 12px 12px 0 0;
+        }
+
+        span {
+          margin: 9px 12px 0 0;
+        }
+
+        .fa-heart {
+          margin-top: 21px;
+          margin-right: 5px;
+          color: rgb(218, 218, 218);
+          transition: .3s;
+          cursor: pointer;
+
+          &:hover {
+            font-size: 18px;
+            transform: translate(2px, -2px);
+            color: rgba(216, 37, 37, 0.342);
+          }
+
+          &:active {
+            color: rgb(216, 37, 37);
+          }
+
+        }
+
+        // 00000000000000000000000000
+        .heartFocus {
+          font-size: 18px;
+          transform: translate(2px, -2px);
+          color: rgb(255, 0, 0) !important;
+
+          &:hover {
+            color: rgb(255, 0, 0);
+          }
+        }
+
+      }
+
+      .word {
+        padding: 0 0 0 48px;
+        margin-top: 12px;
+
+        p {
+          color: #606060;
+          height: 21px;
+        }
+      }
+    }
+  }
+
+  .favoriteVideos {
+    margin-top: 100px;
+    width: calc(100% - 240px);
+    height: 100%;
+    display: none !important;
+
+    .videoPlayArea {
+      width: 360px;
+
+      .rowUp {
+        .playP {
+
+          width: 312px;
+          height: 175px;
+        }
+
+        .text-center {
+          width: 312px;
+          height: 40px;
+          margin-top: -40px;
+          color: rgb(255, 255, 255);
+          background-color: rgba(0, 0, 0, 0.61);
+
+        }
+
+        .font12 {
+          width: 52px;
+          background-color: #ECECEC;
+
+          img {
+            width: 16px;
+            height: 16px;
+          }
+
+          span {
+            margin-left: 3px;
+          }
+        }
+
+      }
+
+      .font14 {
+        img {
+          width: 48px;
+          height: 48px;
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .allFavoriteVideos {
+      width: calc(100% - 360px);
+      background-color: #F1F1F1;
+
+      .card2 {
+        &:hover{
+          background-color: #E5E5E5;
+        }
+        .num {
+          width: 36px;
+          line-height: 101px;
+        }
+
+        .border-bottom {
+          width: calc(100% - 36px);
+        }
+
+        img {
+          width: 120px;
+          height: 68px;
+        }
+
+        .font12 {
+          color: #606060;
+        }
+        .font30{
+          color: rgba(158, 158, 158, 0.671);
+          
+          top: 24px;
+          right: 20px;
+          &:hover{
+            color: rgb(255, 255, 255);
+            background-color: #d6d6d6;
+            box-shadow: 1px 1px 5px 1px rgba(49, 49, 49, 0.253);
+          }
+        }
+      }
+
+    }
+  }
+
+  .BD{
+    display: flex !important;
+  }
+
+
+
+}
+
+
+// ======================
+@media (max-width:1199px) {
+  #navUp {
+    .navUp {
+      .searchLR {
+        width: calc(100% - 369px);
+
+        .searchL {
+          width: calc(100% - 48px);
+
+          .searchBox {
+            width: calc(100% - 101px);
+          }
+        }
+      }
+
+    }
+
+    .navDL {
+      width: 72px;
+    }
+  }
+
+  main {
+
+    #navLeft {
+      width: 72px;
+      padding: 0px;
+
+      ul {
+        border: none !important;
+
+        p {
+          display: none;
+        }
+
+        &:not(:first-child) {
+          display: none !important;
+        }
+
+        li {
+          padding: 16px 0px 14px !important;
+          height: 74px;
+
+          &:nth-child(5) {
+            border: none !important;
+          }
+        }
+
+        .bye {
+          display: none !important;
+        }
+
+        .cc {
+          background-color: #d9d9d900;
+        }
+      }
+
+      div {
+        display: none !important;
+      }
+
+    }
+
+    #video {
+      width: calc(100% - 72px);
+    }
+
+    // ===========
+    #favoriteVideos {
+      width: calc(100% - 72px);
+    }
+  }
+}
+
+@media (max-width:991px) {
+  #navUp {
+    .navDR {
+      overflow: hidden;
+
+      #keywords {
+        .keys {
+          padding: 0 0;
+          position: relative;
+          overflow: hidden;
+
+          span {
+            margin: 12px 12px 12px 0;
+            display: inline-block;
+          }
+
+          img {
+
+            display: block;
+            position: absolute;
+            top: 4px;
+            right: 10px;
+            padding: 16px;
+            border-radius: 50px;
+            background-color: #fff;
+            box-shadow: 0px 0px 15px 13px rgb(255, 255, 255);
+          }
+        }
+
+      }
+    }
+  }
+
+
+}
+
+@media (max-width:767px) {
+  #navUp {
+    .navDL {
+      width: 0px;
+    }
+  }
+
+  main {
+    #navLeft {
+      display: none !important;
+    }
+
+    #video {
+      width: 100%;
+      padding: 0 48px !important;
+
+      .card1 {
+        padding: 0 8px !important;
+      }
+
+    }
+  }
+}
+
+@media (max-width:575px) {
+  #navUp {
+    .navUp {
+      .searchLR {
+
+        .searchL {
+          justify-content: end !important;
+
+          .searchBox {
+            width: 0%;
+            height: 0px;
+            border: none;
+            margin: 0px;
+
+            input {
+              display: none;
+            }
+          }
+        }
+
+        img {
+          padding: 8px !important;
+        }
+      }
+
+
+      button {
+        background: #f8f8f800;
+        border: none;
+        padding: 0px;
+      }
+    }
+  }
+
+  main {
+    #video {
+      .card1 {
+        padding: 0 8px !important;
+      }
+    }
+  }
+}
